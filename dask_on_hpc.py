@@ -9,8 +9,10 @@ import joblib
 
 nums = np.random.randint(low=0, high=100, size=(5_000_000))
 
+
 def weird_function(nums):
     return chr(nums)
+
 
 def main():
     # dask cluster and client
@@ -19,40 +21,37 @@ def main():
     number_workers = number_processes * number_jobs
 
     cluster = SGECluster(
-        interface='ib0',
-        walltime='04:00:00',
-        memory=f'2 G',
-        resource_spec=f'h_vmem=2G',
+        interface="ib0",
+        walltime="04:00:00",
+        memory=f"2 G",
+        resource_spec=f"h_vmem=2G",
         scheduler_options={
-            'dashboard_address': ':5757',
+            "dashboard_address": ":5757",
         },
-        job_extra = [
-            '-cwd',
-            '-V',
-            f'-pe smp {n_processes}',
-            f'-l disk=1G',
+        job_extra=[
+            "-cwd",
+            "-V",
+            f"-pe smp {n_processes}",
+            f"-l disk=1G",
         ],
-        local_directory = os.sep.join([
-            os.environ.get('PWD'),
-            'dask-worker-space'
-        ])
+        local_directory=os.sep.join([os.environ.get("PWD"), "dask-worker-space"]),
     )
 
     client = Client(cluster)
     cluster.scale(jobs=number_jobs)
 
     # main processing
-    print('processing ...')
+    print("processing ...")
     results = []
     bag = db.from_sequence(nums, npartitions=n_workers)
     results = bag.map(weird_function).compute()
-    
-    print('saving ...')
-    joblib.dump(outputs_popweighted, f'/nobackup/${USER}/results.joblib')
+
+    print("saving ...")
+    joblib.dump(outputs_popweighted, f"/nobackup/${USER}/results.joblib")
 
     client.close()
     cluster.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
