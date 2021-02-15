@@ -47,7 +47,7 @@ def main():
     results = bag.map(weird_function).compute()
 
     print("saving ...")
-    joblib.dump(outputs_popweighted, f"/nobackup/${USER}/results.joblib")
+    joblib.dump(results, f"/nobackup/${USER}/results.joblib")
 
     client.close()
     cluster.close()
