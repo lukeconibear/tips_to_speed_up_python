@@ -1,4 +1,4 @@
-## [Tips to speed up Python](https://github.com/lukeconibear/tips_to_speed_up_python)
+## [Tips to speed up Python](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)
 [Luke Conibear](https://www.lukeconibear.com/)  
 l.a.conibear@leeds.ac.uk  
 
@@ -23,6 +23,7 @@ l.a.conibear@leeds.ac.uk
     - Multi-processing
     - Interactive on HPC
     - HPC
+    - Profile parallel code
   - GPUs
 - Recommendations
 - Further information
