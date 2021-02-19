@@ -11,7 +11,7 @@ l.a.conibear@leeds.ac.uk
   - Append to lists, rather than concatenating
   - Move loop-invariants outside loops
   - Use built-in functions
-  - Use suitable/optimal/specialised data structures
+  - Use suitable/optimal/specialised data types
   - Reduce repeated calculations with caching
   - Use vectorisation instead of loops
   - Algorithm improvements
@@ -24,6 +24,7 @@ l.a.conibear@leeds.ac.uk
     - Interactive on HPC
     - HPC
     - Profile parallel code
+    - Suitable data types for parallel computing
   - GPUs
 - Recommendations
 - Further information
