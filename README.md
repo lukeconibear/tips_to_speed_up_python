@@ -11,7 +11,7 @@ l.a.conibear@leeds.ac.uk
   - Append to lists, rather than concatenating
   - Move loop-invariants outside loops
   - Use built-in functions
-  - Use suitable/optimal/specialised data types
+  - Use optimal data types
   - Reduce repeated calculations with caching
   - Use vectorisation instead of loops
   - Algorithm improvements
