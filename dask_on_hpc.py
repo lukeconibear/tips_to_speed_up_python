@@ -26,7 +26,7 @@ def main():
         memory=f"2 G",
         resource_spec=f"h_vmem=2G",
         scheduler_options={
-            "dashboard_address": ":5757",
+            "dashboard_address": ":2727",
         },
         job_extra=[
             "-cwd",
