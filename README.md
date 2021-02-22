@@ -1,6 +1,6 @@
 ![](/intro.png)
 
-[Notebook](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)  
+[Notebook](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/blob/master/Tips%20to%20speed%20up%20Python.ipynb)  
 [Luke Conibear](https://www.lukeconibear.com/)  
 l.a.conibear@leeds.ac.uk  
 
