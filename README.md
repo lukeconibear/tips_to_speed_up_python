@@ -1,4 +1,4 @@
-![intro](intro.png =500x500)
+![](/intro.png)
 
 [Notebook](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)  
 [Luke Conibear](https://www.lukeconibear.com/)  
