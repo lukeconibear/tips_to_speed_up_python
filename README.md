@@ -1,4 +1,4 @@
-<img src="intro.png?raw=true" alt="intro" style="width: 500px;"/>
+![intro](intro.png =500x500)
 
 [Notebook](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)  
 [Luke Conibear](https://www.lukeconibear.com/)  
