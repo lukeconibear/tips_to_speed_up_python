@@ -1,4 +1,6 @@
-## [Tips to speed up Python](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)
+<img src="intro.png" alt="intro" style="width: 500px;"/>
+
+[Notebook](https://nbviewer.jupyter.org/github/lukeconibear/tips_to_speed_up_python/)  
 [Luke Conibear](https://www.lukeconibear.com/)  
 l.a.conibear@leeds.ac.uk  
 
