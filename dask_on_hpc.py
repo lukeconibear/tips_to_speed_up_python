@@ -31,7 +31,7 @@ def main():
         job_extra=[
             "-cwd",
             "-V",
-            f"-pe smp {n_processes}",
+            f"-pe smp {number_processes}",
             f"-l disk=1G",
         ],
         local_directory=os.sep.join([os.environ.get("PWD"), "dask-worker-space"]),
@@ -43,7 +43,7 @@ def main():
     # main processing
     print("processing ...")
     results = []
-    bag = db.from_sequence(nums, npartitions=n_workers)
+    bag = db.from_sequence(nums, npartitions=number_workers)
     results = bag.map(weird_function).compute()
 
     print("saving ...")
